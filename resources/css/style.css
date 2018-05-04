@@ -31,6 +31,25 @@ body {
     align-items: center;
 }
 
+h2 {
+    font-size: 1.9rem;
+    color: #383838;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.10rem;
+    color: #383838;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.1rem;
+    color: gray;
+}
+
 /* Header Section */
 
 header {
@@ -65,3 +84,91 @@ nav.container {
     font-weight: 400;
     color: gray;
 }
+
+/* Navigation */
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.desktop a {
+    display: inline-block;
+    padding-right: .88rem;
+    color: #383838;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+} 
+
+nav .mobile {
+    display: none;
+}
+
+/* Main Banner Section */
+
+.main-banner {
+    background-color: #DCDCDC;
+    margin: 0 auto;
+}
+
+.main-banner .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section img {
+    width: 100%;
+}
+
+.cta {
+    height: auto;
+    padding-left: 1.33rem;
+    margin-right: 3.33rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.15rem;
+    color: #383838;
+    font-weight: 700;
+}
+
+.cta h4 {
+    margin: 1.77rem 0;
+    font-size: 1.25rem;
+    color: #383838;
+    font-weight: 510;
+    line-height: 1.45rem; 
+}
+
+
+.cta a {
+    background-color: #383838;
+    color: white;
+    padding: .88rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Inspiration and information section */
+
+.information .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section img {
+    width: 100%;
+    padding-bottom: 1.33rem;
+
+}
+
+.left-section p {
+    padding: 1.33rem 1.33rem 1.33rem 0;
+}
+
+
