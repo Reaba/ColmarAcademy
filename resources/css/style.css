@@ -33,3 +33,35 @@ body {
 
 /* Header Section */
 
+header {
+    background-color: white;
+}
+
+nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.55rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo img {
+    height: 1.77rem;
+    padding-left: 1.33rem;
+}
+
+.colmar {
+    font-size: 1rem;
+    font-weight: 750;
+}
+
+.academy {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
