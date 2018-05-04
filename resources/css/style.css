@@ -11,12 +11,12 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1050px;
     margin: auto;
 }
 
 .left-section {
-    width: 60%;
+    width: 100%;
     padding: 1.77rem 1.33rem;
 }
 
@@ -48,6 +48,10 @@ p {
     font-size: .8rem;
     line-height: 1.1rem;
     color: gray;
+}
+
+.left-section img {
+    width: 100%;
 }
 
 /* Header Section */
@@ -117,10 +121,6 @@ nav .mobile {
     justify-content: space-between;
 }
 
-.left-section img {
-    width: 100%;
-}
-
 .cta {
     height: auto;
     padding-left: 1.33rem;
@@ -156,19 +156,66 @@ h1 {
 
 /* Inspiration and information section */
 
-.information .container {
+.information {
     display: flex;
     justify-content: space-between;
 }
 
-.left-section img {
-    width: 100%;
-    padding-bottom: 1.33rem;
-
+.left-section h2 {
+    padding-top: 1.33rem;
 }
 
 .left-section p {
     padding: 1.33rem 1.33rem 1.33rem 0;
 }
 
+span {
+    font-size: .75rem;
+    color: #383838;
+    line-height: .95rem;
+}
+
+.information .right-section {
+    border-left: 1px solid #DCDCDC;
+    padding: 0.88rem 0 1.77rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box img.desktop {
+    width: 35%;
+    padding: 0.88rem;
+}
+
+.box img.mobile {
+    display: none;
+}
+
+.content {
+    padding: 0.88rem 0.05rem 0.88rem 0;
+    width: 100%;
+}
+
+.content p {
+    padding-top: 0.44rem;
+}
+
+.content a {
+    color: #4ba3f4;
+    text-decoration: none;
+    font-size: 0.77rem;
+    display: block;
+    padding-top: 0.9rem;
+}
+
+.second-info {
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.third-info {
+    background-color: #DCDCDC;
+}
 
