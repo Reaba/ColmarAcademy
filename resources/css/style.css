@@ -130,7 +130,7 @@ nav {
     text-decoration: none;
 } 
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 480px) {
 nav .mobile {
     display: none;
 }
@@ -146,6 +146,7 @@ nav .mobile {
 .main-banner .container {
     display: flex;
     justify-content: space-between;
+
 }
 
 .cta {
@@ -179,6 +180,49 @@ h1 {
     padding: .88rem 0;
     text-align: center;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-banner .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-banner .left-section {
+        padding: 0;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .right-section .cta {
+        margin: 1.77rem 1.33rem;
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .cta h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .cta h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .cta a {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cta a {
+        width: 100%;
+    }
 }
 
 /* Inspiration and information section */
@@ -240,6 +284,36 @@ span {
 
 .third-info {
     background-color: #DCDCDC;
+}
+
+@media only screen and (max-width: 480px) {
+    .information .left-section {
+        display: none;
+    }
+
+    .information .right-section {
+        padding: .8rem .8rem 1.77rem .8rem;
+        border-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .box img, .desktop {
+        display: none;
+    }
+
+    .box img, .mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0px;
+        width: 100%;
+        margin-top: .8rem;
+    }
 }
 
 /* Courses section */
@@ -306,6 +380,34 @@ span {
     display: none;
 }
 
+@media only screen and (max-width: 480px) {
+    .courses .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .courses-list {
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: .8rem 0;
+    }
+
+    .courses-list a {
+        /* width: 100%; */
+        background-color: #DCDCDC;
+        color: #383838;
+        text-decoration: none;
+        padding: .8rem;
+        margin-bottom: .4rem;
+        font-size: 1.4rem;
+    }
+
+    .courses-grid {
+        display: none;
+    }
+}
+
 /* Exhibition section */
 
 .flex {
@@ -343,6 +445,29 @@ span {
     padding-top: .88rem;
 }
 
+@media only screen and (max-width: 480px) {
+    .exhibits .container {
+        width: 100%;
+    }
+
+    .flex .left-section {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .flex .left-section h6 {
+        display: none;
+    }
+
+    .flex .left-section p {
+        display: none;
+    }
+
+    .flex .right-section {
+        display: none;
+    }
+}
+
 /* Footer section */
 
 footer {
@@ -370,5 +495,15 @@ footer p {
     font-size: .75rem;
     cursor: pointer;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+    footer .footer-nav {
+        display: none;
+    }
+
+    footer p {
+        padding: .8rem 1.33rem;
+    }
 }
 
