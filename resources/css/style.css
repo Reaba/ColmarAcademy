@@ -15,6 +15,8 @@ body {
     margin: auto;
 }
 
+
+
 .left-section {
     width: 100%;
     padding: 1.77rem 1.33rem;
@@ -54,6 +56,11 @@ p {
     width: 100%;
 }
 
+.left-section p {
+    padding: 1.33rem 1.33rem 1.33rem 0;
+}
+
+
 /* Header Section */
 
 header {
@@ -65,6 +72,24 @@ nav.container {
     justify-content: space-between;
     align-items: center;
     height: 3.55rem;
+}
+
+@media only screen and (max-width: 480px) {
+    nav .mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        padding: 0 1.33rem;
+    }
+
+    .mobile-icon {
+        size: 100px;
+    }
+
+    .desktop, .logo img, .colmar, .academy {
+        display: none;
+    }
 }
 
 .logo {
@@ -105,8 +130,10 @@ nav {
     text-decoration: none;
 } 
 
+@media only screen and (min-width: 481px) {
 nav .mobile {
     display: none;
+}
 }
 
 /* Main Banner Section */
@@ -163,10 +190,6 @@ h1 {
 
 .left-section h2 {
     padding-top: 1.33rem;
-}
-
-.left-section p {
-    padding: 1.33rem 1.33rem 1.33rem 0;
 }
 
 span {
@@ -285,6 +308,11 @@ span {
 
 /* Exhibition section */
 
+.flex {
+    display: flex; 
+    justify-content: space-between;
+}
+
 .left-section video {
     width: 100%;
     object-fit: contain;
@@ -294,14 +322,53 @@ span {
     padding-top: 1.33rem;
 }
 
-.exhibits p {
-    padding-top: 0.88rem;
-    padding-bottom: 0;
+.exhibits .first-info {
+    margin-top: 1.77rem;
+}
+
+.exhibits .box img {
+    width: 35%;
+    padding: .88rem;
 }
 
 .exhibits .first-info {
     margin-top: 1.77rem;
 }
 
+.exhibit {
+    background-color: #DCDCDC;
+}
 
+.exhibits p {
+    padding-top: .88rem;
+}
+
+/* Footer section */
+
+footer {
+    border-top: 1px solid #DCDCDC;
+    background-color: white;
+    height: 3.5rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .75rem;
+}
+
+footer p {
+    padding: 0 1.33rem;
+    color: #383838;
+}
+
+.footer-nav a {
+    display: inline-block;
+    padding-right: .88rem;
+    color: #383838;
+    font-size: .75rem;
+    cursor: pointer;
+    text-decoration: none;
+}
 
