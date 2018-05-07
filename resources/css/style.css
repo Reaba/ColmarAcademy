@@ -5,17 +5,15 @@ html {
 }
 
 body {
-    font: 'Ubuntu' , sans-serif;
+    /* font: 'Ubuntu' , sans-serif; */
     font-size: 1rem;
     background-color: white;
 }
 
 .container {
-    max-width: 1050px;
+    /* max-width: 1050px; */
     margin: auto;
 }
-
-
 
 .left-section {
     width: 100%;
@@ -34,22 +32,30 @@ body {
 }
 
 h2 {
+    font-family: 'Fjalla One', sans-serif;
     font-size: 1.9rem;
+    /* color: #383838; */
+    color: rgba(56, 50, 25, 0.9);
+    font-weight: normal;
+}
+
+h6 {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.10rem;
     color: #383838;
     font-weight: 700;
 }
 
-h6 {
-    font-size: 1.10rem;
-    color: #383838;
-    font-weight: 500;
-}
-
 p {
-    font-weight: 400;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 500;
     font-size: .8rem;
     line-height: 1.1rem;
     color: gray;
+}
+
+a {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .left-section img {
@@ -64,14 +70,21 @@ p {
 /* Header Section */
 
 header {
-    background-color: white;
-}
+    /* background-color: white; */
+    /* position: fixed; */
+    /* z-index: 1; */
+} 
 
 nav.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 3.55rem;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -139,13 +152,14 @@ nav .mobile {
 /* Main Banner Section */
 
 .main-banner {
-    background-color: #DCDCDC;
+    background: rgba(255, 231, 140, 0.5);
     margin: 0 auto;
 }
 
 .main-banner .container {
     display: flex;
     justify-content: space-between;
+    padding-top: 3.55rem;
 
 }
 
@@ -160,12 +174,16 @@ nav .mobile {
 }
 
 h1 {
+    font-family: 'Fjalla One', sans-serif;
     font-size: 2.15rem;
-    color: #383838;
-    font-weight: 700;
+    color: rgb(133, 47, 130);
+    font-weight: 550;
+    letter-spacing: 1px;
+    
 }
 
 .cta h4 {
+    font-family: 'Cantarell', sans-serif;
     margin: 1.77rem 0;
     font-size: 1.25rem;
     color: #383838;
@@ -175,11 +193,13 @@ h1 {
 
 
 .cta a {
-    background-color: #383838;
+    /* background-color: #383838; */
+    background: rgba(0, 24, 25, 0.6);
     color: white;
     padding: .88rem 0;
     text-align: center;
     text-decoration: none;
+    border-radius: 3px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -237,7 +257,8 @@ h1 {
 }
 
 span {
-    font-size: .75rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: .65rem;
     color: #383838;
     line-height: .95rem;
 }
@@ -270,7 +291,7 @@ span {
 }
 
 .content a {
-    color: #4ba3f4;
+    color: rgb(76, 185, 228);
     text-decoration: none;
     font-size: 0.77rem;
     display: block;
@@ -283,7 +304,7 @@ span {
 }
 
 .third-info {
-    background-color: #DCDCDC;
+    background: rgba(178, 158, 80, 0.3);
 }
 
 @media only screen and (max-width: 480px) {
@@ -326,7 +347,8 @@ span {
 }
 
 .courses {
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background: rgba(166, 255, 243, 0.3);
     padding-bottom: 1.77rem;
     display: flex;
     justify-content: space-between;
@@ -362,14 +384,11 @@ span {
 }
 
 .course-content span {
+    font-family: 'Fjalla One', sans-serif;
     font-size: .8rem;
     color: gray;
-}
-
-.course-content span {
     line-height: .95rem;
     font-size: .75rem;
-    color: #383838;
 }
 
 .course p {
@@ -434,11 +453,12 @@ span {
 }
 
 .exhibits .first-info {
-    margin-top: 1.77rem;
+    /* margin-top: 1.77rem; */
 }
 
 .exhibit {
-    background-color: #DCDCDC;
+    /* background-color: #DCDCDC; */
+    background: rgba(178, 158, 80, 0.3);
 }
 
 .exhibits p {
