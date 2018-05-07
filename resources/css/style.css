@@ -5,13 +5,11 @@ html {
 }
 
 body {
-    /* font: 'Ubuntu' , sans-serif; */
     font-size: 1rem;
     background-color: white;
 }
 
 .container {
-    /* max-width: 1050px; */
     margin: auto;
 }
 
@@ -34,7 +32,6 @@ body {
 h2 {
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.9rem;
-    /* color: #383838; */
     color: rgba(56, 50, 25, 0.9);
     font-weight: normal;
 }
@@ -69,12 +66,6 @@ a {
 
 /* Header Section */
 
-header {
-    /* background-color: white; */
-    /* position: fixed; */
-    /* z-index: 1; */
-} 
-
 nav.container {
     display: flex;
     justify-content: space-between;
@@ -94,10 +85,18 @@ nav.container {
         justify-content: space-between;
         align-items: left;
         padding: 0 1.33rem;
+        cursor: pointer;
     }
 
-    .mobile-icon {
-        size: 100px;
+    img.mobile-icon {
+        background-color: white;
+        border-radius: 50%;
+        transition-duration: 0.4s;
+        padding: .3rem;
+    }
+
+    img.mobile-icon:hover {
+        background-color: rgb(189, 222, 235);
     }
 
     .desktop, .logo img, .colmar, .academy {
@@ -141,7 +140,14 @@ nav {
     font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
+    transition-duration: 0.4s;
 } 
+
+.desktop a:hover {
+    color: rgb(76, 185, 228);
+}
+
+
 
 @media only screen and (min-width: 480px) {
 nav .mobile {
@@ -192,14 +198,23 @@ h1 {
 }
 
 
-.cta a {
-    /* background-color: #383838; */
+.cta .button {
+    font-family: 'Fgalla One', sans-serif;
     background: rgba(0, 24, 25, 0.6);
     color: white;
     padding: .88rem 0;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
     border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transition-duration: 0.6s;
+}
+
+.button:hover {
+    background-color: rgb(246, 251, 253);
+    color: rgb(76, 185, 228);
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -234,13 +249,13 @@ h1 {
         text-align: center;
     }
 
-    .cta a {
+    .cta .button {
         width: 50%;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .cta a {
+    .cta .button {
         width: 100%;
     }
 }
@@ -296,6 +311,11 @@ span {
     font-size: 0.77rem;
     display: block;
     padding-top: 0.9rem;
+    transition-duration: 0.4s;
+}
+
+.content a:hover {
+    color: rgba(0, 24, 25, 1)
 }
 
 .second-info {
@@ -347,7 +367,6 @@ span {
 }
 
 .courses {
-    /* background-color: #F5F5F5; */
     background: rgba(166, 255, 243, 0.3);
     padding-bottom: 1.77rem;
     display: flex;
@@ -405,7 +424,6 @@ span {
         width: 90%;
     }
     .courses-list {
-        /* width: 100%; */
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -413,13 +431,18 @@ span {
     }
 
     .courses-list a {
-        /* width: 100%; */
-        background-color: #DCDCDC;
-        color: #383838;
+        background-color: rgb(243, 238, 221);
+        color:rgba(0, 24, 25, 0.6);
         text-decoration: none;
         padding: .8rem;
         margin-bottom: .4rem;
         font-size: 1.4rem;
+        transition-duration: 0.4s;
+    }
+
+    .courses-list a:hover {
+        background-color: white;
+        color: rgb(76, 185, 228);
     }
 
     .courses-grid {
@@ -452,12 +475,7 @@ span {
     padding: .88rem;
 }
 
-.exhibits .first-info {
-    /* margin-top: 1.77rem; */
-}
-
 .exhibit {
-    /* background-color: #DCDCDC; */
     background: rgba(178, 158, 80, 0.3);
 }
 
@@ -515,6 +533,11 @@ footer p {
     font-size: .75rem;
     cursor: pointer;
     text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.footer-nav a:hover {
+    color: rgb(76, 185, 228);
 }
 
 @media only screen and (max-width: 480px) {
